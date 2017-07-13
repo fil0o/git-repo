@@ -15,4 +15,4 @@ func_outer()
 
 my_list = [1, 3, 5, 7, 9, 11, 15, 20, 26]
 
-print(binary_serch(my_list, 5))
+print('Элемент находиться на {} позиции'.format(binary_serch.binary_serch(my_list, 11)))
