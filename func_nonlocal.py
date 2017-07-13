@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import binary_serch
 
 def func_outer():
