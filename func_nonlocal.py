@@ -1,4 +1,6 @@
-from binary_serch import binary_serch
+<<<<<<< HEAD
+import binary_serch
+
 def func_outer():
     x = 2
     print('x равно', x)
@@ -12,6 +14,6 @@ def func_outer():
 
 func_outer()
 
-my_list = [1, 3, 5, 7, 9]
+my_list = [1, 3, 5, 7, 9, 11, 15, 20, 26]
 
-print(binary_serch(my_list, 5))
+print('Элемент находиться на {} позиции'.format(binary_serch.binary_serch(my_list, 11)))
