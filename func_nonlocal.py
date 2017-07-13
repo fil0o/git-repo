@@ -1,3 +1,5 @@
+import binary_serch
+
 def func_outer():
     x = 2
     print('x равно', x)
@@ -10,3 +12,7 @@ def func_outer():
     print('Локальное х сменилось на', x)
 
 func_outer()
+
+my_list = [1, 3, 5, 7, 9, 11, 15, 20, 26]
+
+print(binary_serch(my_list, 5))
