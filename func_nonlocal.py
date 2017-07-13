@@ -5,7 +5,6 @@ def func_outer():
     def func_inner():
         nonlocal x
         x = 5
-        print('мы изменяем х локально!')
 
     func_inner()
     print('Локальное х сменилось на', x)
