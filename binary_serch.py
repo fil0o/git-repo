@@ -5,8 +5,9 @@ def binary_serch(list, item):
 
     while low <= high:
         # Цикл работает пока список не сократится до одного элемента
-        mid = low + high
+        mid = (low + high) // 2
         guess = list[mid]
+        print('guess = ', guess)
         if guess == item:
             # Значение найдено
             return mid
@@ -18,7 +19,3 @@ def binary_serch(list, item):
             low = mid + 1
     return None     # Значение не найдено
 
-
-my_list = [1, 3, 5, 7, 9]
-
-print(binary_serch(my_list, 5))
