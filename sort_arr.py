@@ -16,7 +16,7 @@ def selectionSort(arr):
         new_arr.append(arr.pop(smallest))  # Добавляет найденный элемент в новый массив
     return new_arr
 
-print(selectionSort([5, 2, 10, 6, 3, 9, 1]))
+print(selectionSort([5, 2, 10, 6, 3, 9, 1, 8]))
 
 
 
