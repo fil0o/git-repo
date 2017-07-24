@@ -21,7 +21,7 @@ comment = input('Введите комментарий --> ')
 if len(comment) == 0:
     target = today + os.sep + now + '.zip'
 else:
-    target = today + os.sep + now + comment.replace(' ', '_') + '.zip'
+    target = today + os.sep + now + '_' + comment.replace(' ', '_') + '.zip'
 
 # Создаем каталог если его еще нет
 if not os.path.exists(today):
