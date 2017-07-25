@@ -18,5 +18,20 @@ def selectionSort(arr):
 
 print(selectionSort([5, 2, 10, 6, 3, 9, 1, 12, 26]))
 
+def quicksort(array):
+    if len(array) < 2:  # Базовый случай: массива с 0 и 1 элементом уже отсортированы
+        return array
+    else:
+        pivot = array[0]  # Рекурсивный случай
+
+        less = [i for i in array[1:] if i <= pivot]  # Подмассив всех элементов, меньше опорного
+        greater = [i for i in array[1:] if i > pivot]  # Подмассив всех элементов, больше опорного
+
+        return quicksort(less) + [pivot] + quicksort(greater)
+
+print (quicksort([5, 2, 10, 6, 3, 9, 1, 12, 26]))
+
+
+
 
 
